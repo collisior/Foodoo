@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" media="screen" />
+    <title>FooDoo: Recipes page</title>
+
+</head>
+<div class="header">
+    <a href="index.html">
+        <div id="text">
+            <i>F</i><i>o</i><i>o</i><i>D</i><i>o</i><i>o</i>
+        </div>
+        <p>A website created by Camilla Satte.</p>
+        <p>Return to FooDoo home page.</p>
+
+    </a>
+</div>
+<h1>More Random Recipe</h1>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/functions.js"></script>
+
+    <script>
+        getRandomRecipe()
+    </script>
+    <div id="recipes">
+        <div class="polaroid">
+
+            <div class="container">
+                <div id="output"></div>
+                <img id="recipe-image" src="toast.png" style="width:100%">
+                <a id="recipeSourceUrl" href="index.html">
+                    <p>Click here to read recipe!</p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <button class="indexButton" id="recipeButton" onclick="getRandomRecipe()">Generate another recipe...</button>
+</body>
+
+</script>

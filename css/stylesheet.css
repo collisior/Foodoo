@@ -1,0 +1,189 @@
+.header {
+    padding: 80px;
+    /* some padding */
+    text-align: center;
+    /* green background */
+    color: white;
+    /* white text color */
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header h1 {
+    font-size: 80px;
+    color: white;
+}
+
+#text {
+    font-size: 100px;
+    text-shadow: 3px 6px 3px rgba(0, 0, 0, .1);
+}
+
+#text i {
+    position: relative;
+    top: 10px;
+    font-style: normal;
+    animation: bounce 1s ease infinite alternate;
+}
+
+#text i:nth-child(1) {
+    animation-delay: .3s;
+    color: #3d0202;
+}
+
+#text i:nth-child(2) {
+    animation-delay: .6s;
+    color: #500808;
+}
+
+#text i:nth-child(3) {
+    animation-delay: .9s;
+    color: #691313;
+}
+
+#text i:nth-child(4) {
+    animation-delay: 1.2s;
+    color: #7a1c1c;
+}
+
+#text i:nth-child(5) {
+    animation-delay: 1.5s;
+    color: #962121;
+}
+
+#text i:nth-child(6) {
+    animation-delay: 1.8s;
+    color: #b12727;
+}
+
+@keyframes bounce {
+    100% {
+        top: -10px;
+    }
+}
+
+body {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    background: linear-gradient(-45deg, #cfb5ad, #b8b592, #23a6d5, #23d5ab);
+    font-family: sans-serif;
+    text-align: center;
+    background-size: 400% 400%;
+    animation: gradient 17s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.input {
+    height: 40px;
+    width: 500px;
+    /* margin: 8px; */
+    text-align: center;
+    padding: 9px 17px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #202529;
+    letter-spacing: 1.3px;
+    background: transparent;
+    border: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #303030;
+    outline: 0;
+    transition: border-color 0.3s ease;
+    caret-color: black;
+}
+
+.indexButton {
+    /* width: 200px; */
+    height: 60px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 1.8px;
+    outline: 0;
+    border-style: none;
+    margin: 10px;
+    box-shadow: 0 9px rgb(196, 178, 178);
+    cursor: pointer;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear, ease-in;
+    transition-delay: 0s, 1s;
+}
+
+.indexButton:hover {
+    color: #190e29;
+}
+
+.indexButton:active {
+    background-color: #312786;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#searchButton {
+    background-color: #674770;
+    color: white;
+}
+
+#recipeButton {
+    background-color: #6d3c66;
+    color: white;
+}
+
+.diets-select {
+    font-family: Arial;
+}
+
+#diets {
+    background-color: rgb(47, 25, 54);
+    color: rgb(245, 236, 243);
+    border-radius: 10px;
+}
+
+div.polaroid {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+div.outputSubs {
+    text-align: left;
+}
+
+table {
+    border-radius: 15px;
+    /* border: 1px solid rgb(71, 40, 40, 0.4); */
+    background-color: hsl(39, 77%, 83%, 0.3);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid rgb(71, 40, 40, 0.4);
+    /* border-bottom: none; */
+    /* border-top: none; */
+}

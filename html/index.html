@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!-- <div id="toast">
+    <img src="toast.png" alt="toast">
+</div> -->
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" media="screen">
+    <title>FooDoo Home</title>
+</head>
+<div class="header">
+    <a href="index.html">
+        <div id="text">
+            <i>F</i><i>o</i><i>o</i><i>D</i><i>o</i><i>o</i>
+        </div>
+        <p>A website created by Camilla Satte.</p>
+    </a>
+</div>
+
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/functions.js"></script>
+
+    <input id="ingredientInput" class="input" placeholder="Enter ingredient to find its substitues!" title="Invalid input (no digits, please!)">
+    <button class="indexButton" id="searchButton" onclick="goToSubstitutesHTML()">Find substitutes!</button>
+    </input>
+    <br><br>
+    <br><br>
+
+
+    <div class="diets-select">
+        <label for="diets">Select your random recipe food preference:</label>
+        <select name="diets" id="diets">
+            <option value="all">all</option>
+            <option value="vegetarian">vegetarian</option>
+            <option value="vegan">vegan</option>
+        </select>
+    </div>
+
+    <br>
+
+    <button class="indexButton" id="recipeButton" onclick="goToRecipesHTML()">Get Random Recipe!</button>
+
+</body>
+
+</script>
+
+</html>
