@@ -1,5 +1,4 @@
 Author: Camilla Satte
-Github: @collisior
 
 
 ## Website Desciption:
